@@ -1,2 +1,3 @@
-message = "James would say: Let's do something wonderful!" 
+message = "James would say: Let's do something wonderful!"
 print(message.title())
+ 
