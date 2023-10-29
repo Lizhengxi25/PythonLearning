@@ -1,0 +1,52 @@
+print() Print on the screen
+# Annotations, let the computer ignore one line
+"" String will in them
+'' Another way to express a string
+, Divide two things in print, and add an emptyspace between them
+end To control the last printed thing
++ Add
+- Minus
+* Multiply
+/ Divide
+< Less
+> Large
+<= Less or equal
+>= Large or equal
+= Assign
+f Print formatly
+{} A variable can be print without using , or +, through putting the variable name into them
+.format() If there is any empty {} in the previous variable, the things in the () will be putted into the {}.
+    If there is nothing in the (), python will print {}
++ In print(), + will connect two things directly
+\ To achieve some functions like ENTER. Also, it can express key words
+""" To print many lines
+''' Same
+Input() To get informations from user by the terminal
+from A import B Import A module
+sys System
+argv Command line parameter
+... = argv Assign the argv to some variables
+open() Open a file, "w" truncate and write, "r" read the whole file, "a" point the end of the file
+.truncate() Delete all things
+.write() Write something and don't ENTER
+.close() Close the file
+.seek(0) Point the start of the file
+len() Return the length of something
+strip Delete the empty space in a string
+os.path A module for getting some properties of a file
+exists Return if the file exists
+def Define a function
+(*...) Multiple variables
+as With ... as ...
+assert Asserting one expression is True, else execute the protect actions
+del Delete one element from the dictionary
+exec Execute a string as python code
+global Global variable
+lambda Short python function
+pass The part of the code is empty
+raise Give a certain error information when the program meets mistake
+try Try to execute a part, if there's mistake, execute the else
+with With a as b, b stores the value of a
+dicts Store a list of {'x' = a}
+n.join() N will fill with the empty space
+.get()
