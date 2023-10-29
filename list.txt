@@ -49,4 +49,4 @@ try Try to execute a part, if there's mistake, execute the else
 with With a as b, b stores the value of a
 dicts Store a list of {'x' = a}
 n.join() N will fill with the empty space
-.get()
+.get() Get the content of a key in a dictionary
