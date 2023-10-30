@@ -7,7 +7,7 @@ class Engine(object):
 
     def __init__(self, game_map):
         self.game_map = game_map
-        last_scene = self.game_map.next_scene("Death")
+        self.last_scene = self.game_map.next_scene("Death")
 
     def play(self):
         while current_scene != self.last_scene:
