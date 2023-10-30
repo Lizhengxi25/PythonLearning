@@ -50,3 +50,7 @@ with With a as b, b stores the value of a
 dicts Store a list of {'x' = a}
 n.join() N will fill with the empty space
 .get() Get the content of a key in a dictionary
+supper() Inheritate parents' methods.
+          What's valuable for notice is that inheritating parents' methods means use them, neither break whole nor totally same.
+          However, why there isn't situation that inheritate a part is that a thing that inheritates parent class should have similarities with parents.
+          And which is what the supper does.

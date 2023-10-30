@@ -13,6 +13,7 @@ class Child(Parent):
 
 pap = Parent()
 son = Child()
+
 pap.override()
 son.override()
 
