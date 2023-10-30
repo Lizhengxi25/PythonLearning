@@ -7,23 +7,27 @@ class Engine(object):
 
     def __init__(self, game_map):
         self.game_map = game_map
-        last_scene = self.game_map.next_scene("Death")
+        self.last_scene = self.game_map.next_scene("Death")
 
     def play(self):
+        current_scene = self.game_map.opening_scene()
         while current_scene != self.last_scene:
             next_scene_name = current_scene.enter()
             current_scene = self.game_map.next_scene(next_scene_name)
+        self.game_map.next_scene("Death")
 
 
 class Death(Scene):
 
     def enter(self):
-        pass
+        exit(1)
 
 class CentralCorridor(Scene):
 
     def enter(self):
-        pass
+        print("CentralCorridor here")
+        goal_scene = input("goal scene")
+        return goal_scene
 
 class LaserWeaponArmory(Scene):
 
@@ -33,7 +37,9 @@ class LaserWeaponArmory(Scene):
 class TheBridge(Scene):
 
     def enter(self):
-        pass
+        print("The Bridge")
+        goal_scene = input("goal scene")
+        return goal_scene
 
 class EscapePod(Scene):
 
@@ -55,7 +61,7 @@ class Map(object):
         return self.Scenes.get(scene_name)
 
     def opening_scene(self):
-        pass
+        return self.next_scene(self.start_scene)
 
 # a_map = Map("CentralCorridor")
 # a_game = Engine(a_map)
